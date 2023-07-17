@@ -1,0 +1,48 @@
+{
+    "projectId": "64a2397f42a2b73da9e4",
+    "projectName": "yt",
+    "functions": [
+        {
+            "$id": "64ab93b762edd1f11955",
+            "name": "getGitHub",
+            "runtime": "python-3.9",
+            "path": "functions/getGitHub",
+            "entrypoint": "src/index.py",
+            "ignore": [
+                "__pypackages__"
+            ],
+            "execute": [],
+            "events": [],
+            "schedule": "",
+            "timeout": 15
+        },
+        {
+            "$id": "64ac37af18f3476f5574",
+            "name": "getJobData",
+            "runtime": "python-3.9",
+            "path": "functions/getJobData",
+            "entrypoint": "src/index.py",
+            "ignore": [
+                "__pypackages__"
+            ],
+            "execute": [],
+            "events": [],
+            "schedule": "",
+            "timeout": 900
+        },
+        {
+            "$id": "64b42016a2110d7fbfdb",
+            "name": "matchData",
+            "runtime": "python-3.9",
+            "path": "functions/matchData",
+            "entrypoint": "src/index.py",
+            "ignore": [
+                "__pypackages__"
+            ],
+            "execute": [],
+            "events": [],
+            "schedule": "",
+            "timeout": 15
+        }
+    ]
+}
