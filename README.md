@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Jobwrite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
 
-## Available Scripts
+To start using, install everything using:
 
-In the project directory, you can run:
+```bash
 
-### `npm start`
+$ npm install
+$ npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Then open your browser and go to: [http://localhost:3000](http://localhost:3000)
 
-### `npm test`
+## Appwrite
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Head over to [appwrite.io](https://appwrite.io) to get started
 
-### `npm run build`
+- Change the file `.env.example` to `.env`
+- Update the environment variables with your **Appwrite Cloud Endpoint** and **Project ID**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Libs/Tools
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Create React App](https://create-react-app.dev/) for setting up the development environment. This template was created using `$ npx create-react-app my-app`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom) for client-side routing.
 
-### `npm run eject`
+- [pink](https://github.com/appwrite/pink) for cohesive and visually pleasing user interface, backed up with [tailwind](https://tailwindcss.com/docs/guides/create-react-app)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [uuid](https://www.npmjs.com/package/uuid) for generating unique document IDs.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Breaking down `src`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- appwrite
+  - appwrite.js: file for interacting with the Appwrite API.
+- components
+  - assets
+    - image.png: image added in the landing page
+  - AllJobs.jsx: Display all the jobs along with filter options.
+  - CompanyCard.jsx: Representing a card for displaying company information.
+  - Dashboard.jsx: Representing dashboard that browses matching jobs.
+  - Failure.jsx: User is redirected here, when failed to authenticate
+  - FalseSession.jsx: for handling false sessions.
+  - Feedback.jsx: for collecting user feedback.
+  - Header.jsx: Representing the application header.
+  - HomePage.jsx: user is redirected here after signup, gets/ updates user's github information.
+  - Landing.jsx: first page of the app.
+  - Navbar.jsx: a side navigation bar.
+  - Success.jsx: User is redirected here, when successfully authenticated
+- App.js: The main JavaScript file containing all the routing logic.
+- App.test.js: Test file for testing the functionality of the App component.
+- index.css: CSS file for styling the root HTML file (index.html).
+- index.js: The entry point JavaScript file that renders the app into the DOM.
+- reportWebVitals.js: A file for reporting web performance metrics.
+- setupTests.js: A file for setting up testing frameworks and configurations.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Reach out
 
-## Learn More
+> Im always open to suggestions and such, so feel free to make an `issue` or `PR` if you have something you want to add or change. You can refer to the [contributing document](https://duckshie.notion.site/Contributing-356ae14d96e143548474a2ad10978412?pvs=4) for more information on how to contribute.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Social Media
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Twitter](https://twitter.com/duckwhocodes)
+- [Github](https://github.com/Dksie09)
+- [Email](mailto:dakshiegoel@gmail.com)
 
-### Code Splitting
+### License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> See [LICENSE](LICENSE) for more information.
