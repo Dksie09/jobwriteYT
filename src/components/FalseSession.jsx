@@ -18,10 +18,17 @@ function FalseSession() {
         </div>
 
         <div className="flex flex-col items-center justify-center absolute bottom-10 u-margin-32">
+          <div className="loader"></div>
           <p className="u-color-text-info">
             P.S. Checking the current session in the background.
           </p>
-          <div className="loader"></div>
+          <br />
+          <div class="tag is-info">
+            <span class="icon-info" aria-hidden="true"></span>
+            <span class="text">
+              Make sure you have cookies enabled in your browser
+            </span>
+          </div>
         </div>
       </div>
     </>
