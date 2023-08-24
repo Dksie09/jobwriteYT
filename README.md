@@ -1,4 +1,5 @@
 # Jobwrite
+Get job recommendations based on your GitHub :)
 
 ## Getting Started
 
